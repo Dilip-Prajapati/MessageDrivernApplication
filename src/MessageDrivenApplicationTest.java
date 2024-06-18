@@ -43,7 +43,7 @@ public class MessageDrivenApplicationTest {
                 while (true) {
                     try {
                         messageQueue.receive();
-                        throw new RuntimeException("Simulated error");
+                        throw new RuntimeException("Testing Time error");
                     } catch (Exception e) {
                         logger.logError();
                     }
